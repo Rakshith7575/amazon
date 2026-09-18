@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaeded;
+}
+
+header {
+    background: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+}
+
+.search button {
+    padding: 12px 20px;
+    border: none;
+    background: #febd69;
+}
+
+.account {
+    font-size: 14px;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+nav {
+    background: #232f3e;
+    color: white;
+    padding: 14px;
+    display: flex;
+    gap: 30px;
+}
+
+.hero {
+    background: #ddd;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button,
+.card button {
+    background: #ff9900;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    min-height: 220px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+footer {
+    background: #131921;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+}
